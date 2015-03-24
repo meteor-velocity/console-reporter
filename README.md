@@ -5,5 +5,5 @@ Reports test results to the console.
 ## Install
 
 ```bash
-meteor install velocity:console-reporter
+meteor add velocity:console-reporter
 ```
