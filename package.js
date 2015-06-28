@@ -12,6 +12,7 @@ Package.onUse(function(api) {
   api.export('ConsoleReporter', 'server');
   api.use([
     'underscore',
+    'velocity:core@0.7.0',
     'velocity:shim@0.1.0'
   ], 'server');
   api.addFiles([
