@@ -9,7 +9,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
-  api.export('ConsoleReporter');
+  api.export('ConsoleReporter', 'server');
   api.use([
     'underscore',
     'velocity:shim@0.1.0'
