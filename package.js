@@ -1,6 +1,6 @@
 Package.describe({
   name: 'velocity:console-reporter',
-  version: '0.1.1',
+  version: '0.1.2',
   summary: 'A console reporter for Velocity',
   git: 'https://github.com/meteor-velocity/console-reporter.git',
   documentation: 'README.md',
@@ -8,7 +8,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.0.3.1');
+  api.versionsFrom('1.1.0.2');
   api.export('ConsoleReporter', 'server');
   api.use([
     'underscore',
