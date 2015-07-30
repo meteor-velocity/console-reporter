@@ -4,6 +4,7 @@
  */
 
 var consoleReporter = new ConsoleReporter();
+var startTime = new Date();
 
 VelocityAggregateReports
   .find({
@@ -17,11 +18,16 @@ VelocityAggregateReports
 
 function onComplete(aggregateReport) {
   var testReports = VelocityTestReports
-    .find({framework: aggregateReport.name})
+    .find({
+      framework: aggregateReport.name,
+      timestamp: {$gt: startTime}
+    })
     .fetch();
 
-  consoleReporter.reportSummary(
-    aggregateReport.name,
-    testReports
-  )
+  if (testReports.length) {
+    consoleReporter.reportSummary(
+      aggregateReport.name,
+      testReports
+    );
+  }
 }
