@@ -33,7 +33,7 @@ _.extend(ConsoleReporter.prototype, {
   },
 
   reportOneFailed: function (testReport) {
-    console.error(testReport.name);
+    console.error(testReport.fullName || testReport.name);
     console.error(testReport.failureMessage);
     console.error(testReport.failureStackTrace);
   },
