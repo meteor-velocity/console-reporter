@@ -1,6 +1,6 @@
 Package.describe({
   name: 'velocity:console-reporter',
-  version: '0.1.3',
+  version: '0.1.4',
   summary: 'A console reporter for Velocity',
   git: 'https://github.com/meteor-velocity/console-reporter.git',
   documentation: 'README.md',
