@@ -1,7 +1,9 @@
 /* globals
-   VelocityAggregateReports: false,
    ConsoleReporter: false
  */
+
+var VelocityAggregateReports = Package['velocity:reports'].VelocityAggregateReports;
+var VelocityTestReports = Package['velocity:reports'].VelocityTestReports;
 
 var consoleReporter = new ConsoleReporter();
 var startTime = new Date();
