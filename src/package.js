@@ -4,7 +4,7 @@ Package.describe({
   summary: 'A console reporter for Velocity',
   git: 'https://github.com/meteor-velocity/console-reporter.git',
   documentation: '../README.md',
-  debugOnly: true
+  testOnly: true
 });
 
 Package.onUse(function(api) {
